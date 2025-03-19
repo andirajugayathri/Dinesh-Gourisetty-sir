@@ -21,6 +21,7 @@ body {
     background: #fff;
     color: #00277a;
     font-weight: 600;
+    padding: 12px 25px;
 }
 .btn-outline-light:hover{
     background:#ff9933 !important;
@@ -34,7 +35,7 @@ body {
 }
 
 .home-hero-section {
-    background: linear-gradient(rgba(97, 115, 121, 0.263),rgba(65, 11, 296, 0.8)), url(../images/image17.jpg) center / cover no-repeat;
+    background: linear-gradient(rgba(97, 115, 121, 0.263),rgba(65, 11, 296, 0.6)), url(../images/image17.jpg) center / cover no-repeat;
     width: 100%;
     height: 500px;
     color: white;
@@ -44,7 +45,9 @@ body {
     background-position: center;
 
 }
-
+li::marker{
+    color: #ff9933;
+}
 .home-section-title {
     position: relative;
     margin-bottom: 2rem;
@@ -568,7 +571,7 @@ body {
 }
 
 .blog-img {
-    height: 220px;
+    height: 260px;
     width: 100%;
     object-fit: cover;
 }
@@ -764,6 +767,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 
 .hero-section p{
     font-size: 30px;
