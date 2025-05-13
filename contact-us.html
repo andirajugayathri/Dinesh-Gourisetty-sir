@@ -10,38 +10,13 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <span style="color: #ff9933;">Dinesh</span> <span style="color: #00277a;">Gourisetty</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="hero-sectionc">
         <div class="container text-center">
             <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
-            <p class="lead mb-0">Get in touch with Dinesh Gourisetty and join the movement for change</p>
+            <p class="leads mb-0">Get in touch with Dinesh Gourisetty and join the movement for change</p>
         </div>
     </section>
 
@@ -69,13 +44,13 @@
                         </div>
                         
                         <div class="social-links">
-                            <a href="https://instagram.com/dineshgourisetty" class="social-link">
+                            <a href="https://instagram.com/dineshgourisetty" class="social-link text-decoration-none" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://facebook.com/DineshGourisetty" class="social-link">
+                            <a href="https://facebook.com/DineshGourisetty" class="social-link text-decoration-none" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://twitter.com/thatsdinesh" class="social-link">
+                            <a href="https://twitter.com/thatsdinesh" class="social-link text-decoration-none" target="_blank"> 
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
@@ -113,7 +88,7 @@
                             </div>
                             
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="subscribe">
+                                <input type="checkbox" class="form-check-input border-dark" id="subscribe">
                                 <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
                             </div>
                             
@@ -231,42 +206,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="about-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mb-4">
-                    <h4 class="mb-3">Dinesh Gourisetty</h4>
-                    <p>Architect of Change – From Entrepreneur to Political Visionary</p>
-                    <p>Join our mission to create more inclusive, diverse, and representative political landscapes.</p>
-                </div>
-                <div class="col-md-4 col-lg-2 mb-4">
-                    <h5 class="mb-3">Quick Links</h5>
-                    <ul class="about-footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3">
-                    <h5 class="mb-4">Contact Info</h5>
-                    <ul class="home-footer-links">
-                        <li><i class="fas fa-envelope me-2"></i> contact@dineshgourisetty.com</li>
-                        <div class="about-social-links mt-3">
-                            <a href="https://instagram.com/dineshgourisetty"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://facebook.com/DineshGourisetty"><i class="fab fa-twitter"></i></a>
-                            <a href="https://twitter.com/thatsdinesh"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center pt-4 mt-4 border-top border-secondary">
-                <p>© 2025 Dinesh Gourisetty. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+    <div id="footer"></div>
+     <script>
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+     </script>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
